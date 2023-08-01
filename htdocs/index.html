@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.112.5">
-    <title>Violin Gig Website</title>
+    <title>(insert name here)</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
 
@@ -84,70 +84,60 @@
       .bd-mode-toggle {
         z-index: 1500;
       }
+      #jumbotron {
+          background-image: url("/assets/img/violingigbackground.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center 30%;
+          min-height: 75vh;
+
+          display: flex;
+
+          align-items: center;
+
+          animation: fadein 2s;
+        }
+
+        @keyframes fadein {
+          from { opacity: 0; }
+          to   { opacity: 1; }
+         }
     </style>
 
     
     <!-- Custom styles for this template -->
     <link href="/assets/css/carousel.css" rel="stylesheet">
   </head>
-  <body>
-<header data-bs-theme="dark">
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand ps-5" href="#">Violin Gig Website</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
-  </nav>
-</header>
-<main>
 
-  <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel" data-bs-theme="light">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-        <div class="container">
-          <div class="carousel-caption text-start align-middle">
-            <h1>The Best Violinists In Town</h1>
-            <p class="opacity-75">We are so good</p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>The Most Experienced</h1>
-            <p>We have performed in so many places</p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-        <div class="container">
-          <div class="carousel-caption text-end">
-            <h1>The cheapest prices</h1>
-            <p>We charge so little!</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
+<body class="pt-0">
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark  sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">(Insert name here)</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#about-section">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact-section">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <!-- Jumbotron -->
+  <div class="mb-5 p-5" id="jumbotron">
+    <div class="container-fluid py-5">
+      <h1 id="jumbotron-text" class="display-5 fw-bold text-center p-5" style="color:white">(Insert name here)</h1>
+    </div>
   </div>
 
+  <!-- Jumbotron -->
 
   <!-- Marketing messaging and featurettes
   ================================================== -->
@@ -155,69 +145,74 @@
 
   <div class="container marketing">
     <!-- Three columns of text below the carousel -->
-    <div class="pb-3">
-      <h1 class="text-center pb-3">
-        About Us
-      </h1>
+    <section id="about-section">
+      <div class="pb-3">
+        <h1 class="text-center pb-3">
+          About Us
+        </h1>
 
-      <p class="text-center fs-4">
-        (Insert name here) is a freelance musician service founded out of a passion for music.
-        We aim to provide you with our best music to make your special occasion even better!
-        We can arrange music for solo violin, two violins, and a violin/piano duo(maybe).
-      </p>
-    </div>
+        <p class="text-center fs-4">
+          (Insert name here) is a freelance musician service founded out of a passion for music.
+          We aim to provide you with our best music to make your special occasion even better!
+          We can arrange music for solo violin, two violins, and a violin/piano duo(maybe).
+        </p>
+      </div>
 
-    <div class="row">
-      <div class="col-lg-4 offset-lg-1">
-        <img src="/assets/img/profilepicnadia.jpg" class="rounded-circle" alt="Nadia Rosadi's Profile Picture" width="225">
-        <h2 class="fw-normal py-2">Nadia Rosadi</h2>
-        <p>Hi, I’m Nadia Rosadi! I began studying violin at around six years old at the Betty Haag Academy of Music
-          and am a current member of the Schaumburg Youth Symphony Orchestra.
-          I have also participated in the Illinois Music Education Association
-          Festival and been a member of the D211  Honors Orchestra.
-          In my free time, I enjoy listening to music,
-          eating good food, and hanging out with friends.</p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4 offset-lg-2">
-        <img src="/assets/img/profilepicjulian.png" class="rounded-circle" alt="Julian Rosadi's Profile Picture" width="225">
-        <h2 class="fw-normal py-2">Julian Rosadi</h2>
-        <p>Hi, I'm Julian Rosadi, and I'm a violinist. I have been playing violin for around eight years,
-          and have played with the Schaumburg Youth Symphony Orchestra,
-          and have also participated in the Illinois Music Education Association Junior Festival.
-          In addition to playing violin, I also enjoy playing piano arrangements for my favorite
-          game/movie songs and coding.</p>
-      </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
+      <div class="row">
+        <div class="col-lg-4 offset-lg-1">
+          <img src="/assets/img/profilepicnadia.jpg" class="rounded-circle" alt="Nadia Rosadi's Profile Picture" width="225">
+          <h2 class="fw-normal py-2">Nadia Rosadi</h2>
+          <p>Hi, I’m Nadia Rosadi! I began studying violin at around six years old at the Betty Haag Academy of Music
+            and am a current member of the Schaumburg Youth Symphony Orchestra.
+            I have also participated in the Illinois Music Education Association
+            Festival and been a member of the D211  Honors Orchestra.
+            In my free time, I enjoy listening to music,
+            eating good food, and hanging out with friends.</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 offset-lg-2">
+          <img src="/assets/img/profilepicjulian.png" class="rounded-circle" alt="Julian Rosadi's Profile Picture" width="225">
+          <h2 class="fw-normal py-2">Julian Rosadi</h2>
+          <p>Hi, I'm Julian Rosadi, and I'm a violinist. I have been playing violin for around eight years,
+            and have played with the Schaumburg Youth Symphony Orchestra,
+            and have also participated in the Illinois Music Education Association Junior Festival.
+            In addition to playing violin, I also enjoy playing piano arrangements for my favorite
+            game/movie songs and coding.</p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+    </section>
 
+    <section id="contact-section">
+      <h1>Contact Us!</h1>
 
-    <h1>Contact Us!</h1>
-
-    <!--jumbotron-->
-    <div class="mt-4 p-4 my-5 bg-primary text-white rounded">
-      <div class="row fs-4">
-        <div class="col-lg-4">
-          <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-telephone mt-3" viewBox="0 0 32 32">
-            <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-          </svg>
-          <p><b>Call Us</b></p>
-          <p>847-387-9139</p>
-        </div>
-        <div class="col-lg-4">
-          <svg xmlns="http://www.w3.org/2000/svg"  width="64" height="64" fill="currentColor" class="bi bi-envelope mt-3" viewBox="0 0 32 32">
-            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
-          </svg>
-          <p><b>Email Us</b></p>
-          <p>nadia.a.k.rosadi@gmail.com<p></p>
-        </div>
-        <div class="col-lg-4">
-          <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-youtube mt-3" viewBox="0 0 32 32">
-            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
-          </svg>
-          <p><b>Our Youtube Channel</b></p>
-          <p>youtube</p>
+      <!--jumbotron-->
+      <div class="mt-4 p-4 my-5 bg-primary text-white rounded">
+        <div class="row fs-4">
+          <div class="col-lg-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-telephone mt-3" viewBox="0 0 32 32">
+              <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+            </svg>
+            <p><b>Call Us</b></p>
+            <p>847-387-9139</p>
+          </div>
+          <div class="col-lg-4">
+            <svg xmlns="http://www.w3.org/2000/svg"  width="64" height="64" fill="currentColor" class="bi bi-envelope mt-3" viewBox="0 0 32 32">
+              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+            </svg>
+            <p><b>Email Us</b></p>
+            <p>nadia.a.k.rosadi@gmail.com<p></p>
+          </div>
+          <div class="col-lg-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-youtube mt-3" viewBox="0 0 32 32">
+              <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+            </svg>
+            <p><b>Our Youtube Channel</b></p>
+            <p>youtube</p>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
+
+  </div>
   <!--
    Add featurette if needed!
 
@@ -244,7 +239,7 @@
   <!-- FOOTER -->
   <footer class="container">
     <p class="float-end"><a href="#">Back to top</a></p>
-    <p>&copy; 2023 whatever our name is</p>
+    <p>&copy; 2023 (insert name here)</p>
   </footer>
 </main>
 <script src="/assets/js/bootstrap.bundle.min.js"></script>
