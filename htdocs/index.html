@@ -107,6 +107,19 @@
          .card {
             height: 15vw;
          }
+
+        .carousel-control-prev-icon {
+         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+        }
+
+        .carousel-control-next-icon {
+          background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+        }
+
+        .carousel-item {
+
+        }
+
     </style>
 
     <link href="/assets/css/carousel.css" rel="stylesheet">
@@ -123,6 +136,9 @@
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link" href="#about-section">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#photo-section">Photo Gallery</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#contact-section">Contact</a>
@@ -178,10 +194,52 @@
           <h2 class="fw-normal py-2">Julian Rosadi</h2>
           <p>Hi, I'm Julian Rosadi, co-founder and web master of Cantabile Today. I'm a violinist,
             have played with the Schaumburg Youth Symphony Orchestra,
-            and also participated in the Illinois Music Education Association Junior Festival.
+            and also participated in the Illinois Music Education Association Festival.
             In addition to playing violin, I enjoy playing video games and coding.</p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
+    </section>
+    <section id = "photo-section" class="mb-2">
+      <h1 class="text-center pb-3">Photo Gallery</h1>
+      <!-- Carousel -->
+      <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/assets/img/photo-gallery/IMG_20230802_122817.jpg" alt="Photo at retirement home" class="d-block" style="width:100%">
+          </div>
+          <div class="carousel-item">
+            <img src="/assets/img/photo-gallery/PXL_20230902_170912466.jpg" alt="Photo at retirement home" class="d-block" style="width:100%">
+          </div>
+          <div class="carousel-item">
+            <img src="/assets/img/photo-gallery/PXL_20231227_181412598.jpg" alt="Photo at retirement home" class="d-block" style="width:100%">
+          </div>
+          <div class="carousel-item">
+            <img src="/assets/img/photo-gallery/PXL_20241013_185750032.jpg" alt="Photo at retirement home" class="d-block" style="width:100%">
+          </div>
+          <div class="carousel-item">
+            <img src="/assets/img/photo-gallery/PXL_20241013_192210315.jpg" alt="Photo at retirement home" class="d-block" style="width:100%">
+          </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
     </section>
 
     <section id="contact-section" class="pb-5">
@@ -200,7 +258,12 @@
 <!--            <p>youtube</p>-->
 <!--          </div>-->
 <!--        </div>-->
+
+
     </section>
+
+
+
     <section id="testimonials-section" class="mb-2">
       <h1 class="text-center pb-3">Customer Testimonials</h1>
       <div class="row">
@@ -250,7 +313,7 @@
   <!-- FOOTER -->
   <footer class="container">
     <p class="float-end"><a href="#">Back to top</a></p>
-    <p>&copy; 2023 Cantabile Today</p>
+    <p>&copy; 2025 Cantabile Today</p>
   </footer>
   </div>
 </main>
